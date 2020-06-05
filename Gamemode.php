@@ -24,7 +24,7 @@ use pocketmine\level\Level;
 
 class Gamemode extends PluginBase implements Listener{
 
-  public $list = array("world" => 0, "island" => 0);
+  public $list = array("world" => 0, "island" => 0, "default" => 0);
   
   public $mode = 1; //0 : apply to op, 1 : apply to user(except op)
   
@@ -70,11 +70,13 @@ class Gamemode extends PluginBase implements Listener{
     
     if($player->isOp() and $mode == 1) return true;
     
+    $int = $list["default"];
+    
     if(isset($list[$level_name])){
     
       $int = $list[$level_name];
-      
-      $player->setGamemode($int);
     }
+    
+    $player->setGamemode($int);
   }
 }
