@@ -2,14 +2,14 @@
 
 /**
  * @name Gamemode
- * @main securti\gamemode\Gamemode
- * @author ["Securti"]
+ * @main tjwls012\gamemode\Gamemode
+ * @author ["tjwls012"]
  * @version 0.1
  * @api 3.13.0
  * @description License : LGPL 3.0
  */
  
-namespace securti\gamemode;
+namespace tjwls012\gamemode;
  
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
